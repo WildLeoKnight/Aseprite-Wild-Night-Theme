@@ -1,0 +1,19 @@
+{
+  "name": "wild-night-theme",
+  "displayName": "Wild Night",
+  "description": "A smooth dark theme for Aseprite",
+  "version": "0.5.1",
+  "author": { "name": "WildLeoKnight", "email": "wildleoknight@gmail.com", "url": "https://wildleoknight.itch.io/aseprite-darkmode" },
+  "contributors": [
+  ],
+  "publisher": "WildLeoKnight",
+  "license": "CC-BY-4.0",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      { "id": "Wild Night", "path": "." }
+    ]
+  }
+}
