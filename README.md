@@ -10,8 +10,8 @@ Orange Version
 # Changelog
 ```
 1.2
-> Compatibility with Aseprite 1.2.18
-> Created a Orange variant
+> Added compatibility with Aseprite 1.2.18
+> Created an Orange variant - Gladiator Orange
 > Improved visiblity on the Purple version
 > Fixed the console/error window background being white
 
