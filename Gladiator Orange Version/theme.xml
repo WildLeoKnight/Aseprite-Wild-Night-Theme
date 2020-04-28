@@ -1,5 +1,5 @@
 <?xml version="1.2" encoding="utf-8" ?>
-<theme name="Wild Night Purple" screenscaling="1" uiscaling="2">
+<theme name="Wild Night Orange" screenscaling="1" uiscaling="2">
     <authors>
         <author name="WildLeoKnight" url="https://wildleoknight.wixsite.com/wildleoknight" />
     </authors>
@@ -40,13 +40,13 @@
         <!-- X | Color for disabled menus and Secondary color used for example on the home tab, on file path text -->
         <color id="face" value="#080811" />
         <!-- X | Color that appears on the shading bar text when no color has been selected -->
-        <color id="hot_face" value="#5b3bde" />
+        <color id="hot_face" value="#f15327" />
         <!-- X | Color that appear on the background of the warning_box when the hovered -->
-        <color id="selected" value="#5b3bde" />
+        <color id="selected" value="#f15327" />
         <!-- X | Color that appears on background the selected of text -->
         <color id="selected_text" value="#FFFFFF" />
         <!-- X | Color of the selected of text -->
-        <color id="separator_label" value="#5b3bde" />
+        <color id="separator_label" value="#f15327" />
         <!-- X | Color of the text that is on the same line as the separator -->
         <color id="background" value="#080811" />
         <!-- X | Color of inside background on windows on the home tab and used as the shadow color for disabled menu's text -->
@@ -60,7 +60,7 @@
         <!-- X | Color of the suffix text when you create a new project aka the 'px' part -->
         <color id="link_text" value="#435265" />
         <!-- X | Color of the link text, not the home link -->
-        <color id="link_hover" value="#5b3bde" />
+        <color id="link_hover" value="#f15327" />
         <!-- X | Color of the link text when hovered, 			used in recent_file_pin -->
         <color id="button_normal_text" value="#FFFFFF" />
         <!-- X | Color of text on buttons, yes even including the preview and small windows buttons-->
@@ -68,11 +68,11 @@
         <!-- X | Color of text on buttons when hovering them, yes even including the preview and small windows buttons-->
         <color id="button_selected_text" value="#FFFFFF" />
         <!-- X | Color of text on buttons when clicked them, yes even including the preview and small windows buttons-->
-        <color id="check_hot_face" value="#5b3bde" />
+        <color id="check_hot_face" value="#f15327" />
         <!-- X | Color of the checkbox background when hovered-->
         <color id="check_focus_face" value="#080811" />
         <!-- X | Color of the checkbox background when selected aka after being clicked-->
-        <color id="radio_hot_face" value="#5b3bde" />
+        <color id="radio_hot_face" value="#f15327" />
         <!-- X | Color of the radio/option box background when hovered-->
         <color id="radio_focus_face" value="#080811" />
         <!-- X | Color of the radio/option box background when selected aka after being clicked-->
@@ -82,7 +82,7 @@
         <!-- X | Color of the menu and arrows background -->
         <color id="menuitem_hot_text" value="#FFFFFF" />
         <!-- X | Color of the menu text and arrows when hovered -->
-        <color id="menuitem_hot_face" value="#5b3bde" />
+        <color id="menuitem_hot_face" value="#f15327" />
         <!-- X | Color of the menu and arrows background when hovered -->
         <color id="menuitem_highlight_text" value="#FFFFFF" />
         <!-- X | Color of the menu text and arrows when clicked -->
@@ -108,9 +108,9 @@
         <!-- X | Color of the listitem text background  -->
         <color id="listitem_selected_text" value="#FFFFFF" />
         <!-- X | Color of the listitem selected item text, 			used in recent_file_detail and news_detail  -->
-        <color id="listitem_selected_face" value="#5b3bde" />
+        <color id="listitem_selected_face" value="#f15327" />
         <!-- X | Color of the listitem selected item text background  -->
-        <color id="slider_empty_text" value="#5b3bde" />
+        <color id="slider_empty_text" value="#f15327" />
         <!-- X | Color of the text inside the slider when the slider bar is not over the text  -->
         <color id="slider_full_text" value="#FFFFFF" />
         <!-- X | Color of the text inside the slider when the slider bar is over the text  -->
@@ -124,7 +124,7 @@
         <!-- Unused  -->
         <color id="tooltip_text" value="#000000" />
         <!-- I thought textbox_text was this, so I don't know what this does -->
-        <color id="tooltip_face" value="#5b3bde" />
+        <color id="tooltip_face" value="#f15327" />
         <!-- X | Color of the tooltip background -->
         <color id="filelist_even_row_text" value="#FFFFFF" />
         <!-- X | Color of the even row text -->
@@ -136,7 +136,7 @@
         <!-- X | Color of the odd row text background  -->
         <color id="filelist_selected_row_text" value="#FFFFFF" />
         <!-- X | Color of the selected row text -->
-        <color id="filelist_selected_row_face" value="#5b3bde" />
+        <color id="filelist_selected_row_face" value="#f15327" />
         <!-- X | Color of the selected row text background -->
         <color id="filelist_disabled_row_text" value="#ffc8c8" />
         <!-- Unused -->
@@ -146,7 +146,7 @@
         <!-- X | Color of the workspace text -->
         <color id="workspace_link" value="#435265" />
         <!-- X | Color of the workspace link text -->
-        <color id="workspace_link_hover" value="#5b3bde" />
+        <color id="workspace_link_hover" value="#f15327" />
         <!-- X | Color of the workspace link text when hovered -->
         <color id="timeline_normal" value="#c6c6c6" />
         <!-- Don't know what this does -->
@@ -176,7 +176,7 @@
         <!-- Don't know what this does  -->
         <color id="timeline_band_bg" value="#76858e" />
         <!-- Don't know what this does  -->
-        <color id="status_bar_text" value="#5b3bde" />
+        <color id="status_bar_text" value="#f15327" />
         <!-- X | Color of the bottom left text, use The purple here  -->
         <color id="status_bar_face" value="#191D29" />
         <!-- X | Color of the bottom left text background, use the same as the Workspace/tab_active_face -->
@@ -184,7 +184,7 @@
         <!-- X | Color of the flag background on boot -->
         <color id="flag_active" value="#FF0000" />
         <!-- X | Color of the flag background after being clicked  -->
-        <color id="flag_clicked" value="#5b3bde" />
+        <color id="flag_clicked" value="#f15327" />
         <!-- X | Color of the flag background when clicked -->
         <color id="select_box_ruler" value="#0000ff" />
         <!-- Unused  -->
@@ -501,7 +501,7 @@
         <part id="outline_vertical" x="192" y="224" w="13" h="15" />
         <part id="outline_empty_pixel" x="208" y="224" w="5" h="5" />
         <part id="outline_full_pixel" x="214" y="224" w="5" h="5" />
-		<part id="dynamics" x="176" y="144" w="16" h="16" />
+        <part id="dynamics" x="176" y="144" w="16" h="16" />
     </parts>
     <styles>
         <style id="box" />
@@ -766,11 +766,11 @@
             <background color="listitem_selected_face" state="selected" />
             <icon part="unpinned" align="center middle" color="link_hover" />
             <icon part="unpinned" align="center middle" color="listitem_selected_text" state="mouse" />
-            <!-- changed the color of the line icon above to have link_hover color (5b3bde) and created another to have the hover property -->
+            <!-- changed the color of the line icon above to have link_hover color (f15327) and created another to have the hover property -->
             <icon part="unpinned" align="center middle" color="listitem_selected_text" state="selected" />
             <icon part="pinned" align="center middle" color="link_hover" state="focus" />
             <icon part="pinned" align="center middle" color="listitem_selected_text" state="focus mouse" />
-            <!-- changed the color of the line icon above to have link_hover color (5b3bde) and created another to have the hover property -->
+            <!-- changed the color of the line icon above to have link_hover color (f15327) and created another to have the hover property -->
             <icon part="pinned" align="center middle" color="listitem_selected_text" state="focus selected" />
         </style>
         <style id="news_item" border="2">
