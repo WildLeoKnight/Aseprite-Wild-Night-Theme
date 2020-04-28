@@ -17,7 +17,7 @@ Orange Version
 
 ```
 
-*This theme was inspired on Endesga's [Edg Theme](https://endesga.itch.io/edgtheme) and Lyutria's [Studio Theme](https://github.com/Lyutria/aseprite-studio-theme).*
+*This theme was inspired by Endesga's [Edg Theme](https://endesga.itch.io/edgtheme) and Lyutria's [Studio Theme](https://github.com/Lyutria/aseprite-studio-theme).*
 
 ----
 **Credits**
