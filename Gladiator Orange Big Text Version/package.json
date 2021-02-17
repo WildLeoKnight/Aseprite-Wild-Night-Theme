@@ -1,0 +1,19 @@
+{
+  "name": "wild-night-theme-orange-big-text",
+  "displayName": "Wild Night Orange BT",
+  "description": "A smooth dark theme for Aseprite",
+  "version": "1.2",
+  "author": { "name": "WildLeoKnight", "email": "wildleoknight@gmail.com", "url": "https://wildleoknight.itch.io/aseprite-wild-night-theme" },
+  "contributors": [
+  ],
+  "publisher": "WildLeoKnight",
+  "license": "CC-BY-4.0",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      { "id": "Wild Night Orange BT", "path": "." }
+    ]
+  }
+}

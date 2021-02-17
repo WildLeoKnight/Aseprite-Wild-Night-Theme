@@ -1,15 +1,15 @@
 <?xml version="1.2" encoding="utf-8" ?>
-<theme name="Wild Night Purple" screenscaling="1" uiscaling="2">
+<theme name="Wild Night Purple BT" screenscaling="1" uiscaling="2">
     <authors>
         <author name="WildLeoKnight" url="https://wildleoknight.wixsite.com/wildleoknight" />
     </authors>
     <fonts>
         <!-- <font id="default" font="Aseprite" /> -->
         <!-- <font id="mini" font="Aseprite Mini" /> -->
-        <!-- <font id="default" name="Pixellari" type="truetype" file="Pixellari.ttf" size="8" /> -->
-        <!-- <font id="mini" name="Pixellari" type="truetype" file="Pixellari.ttf" size="8" /> -->
-        <font id="default" name="EnterCommand" type="truetype" file="EnterCommand.ttf" size="8" />
-        <font id="mini" name="EnterCommand" type="truetype" file="EnterCommand.ttf" size="8" />
+        <font id="default" name="Pixellari" type="truetype" file="Pixellari.ttf" size="8" />
+        <font id="mini" name="Pixellari" type="truetype" file="Pixellari.ttf" size="8" />
+        <!-- <font id="default" name="EnterCommand" type="truetype" file="EnterCommand.ttf" size="8" /> -->
+        <!-- <font id="mini" name="EnterCommand" type="truetype" file="EnterCommand.ttf" size="8" /> -->
     </fonts>
     <dimensions>
         <dim id="scrollbar_size" value="12" />
