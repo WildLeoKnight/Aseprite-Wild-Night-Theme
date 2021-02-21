@@ -2,12 +2,25 @@
  A smooth dark theme for Aseprite
 
 Purple Version
-![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNightPurple_Screenshot.png)
+![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNight2'0ExamplePurple.png)
 Orange Version
-![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNightOrange_Screenshot.png)
+![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNight2'0ExampleOrange.png)
+Green Version
+![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNight2'0ExampleGreen.png)
 
 
 # Changelog
+```
+2.0
+> Complete theme overhaul
+> Created a Green variant - Toxic Green
+```
+
+```
+1.3
+> Added bigger text version
+```
+
 ```
 1.2
 > Added compatibility with Aseprite 1.2.18
