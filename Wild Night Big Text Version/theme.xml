@@ -1,4 +1,4 @@
-<?xml version="2.0" encoding="utf-8" ?>
+<?xml version="2.1" encoding="utf-8" ?>
 <theme name="Wild Night Purple BT" screenscaling="1" uiscaling="2">
     <authors>
         <author name="WildLeoKnight" url="https://wildleoknight.github.io/" />
@@ -502,6 +502,18 @@
         <part id="outline_empty_pixel" x="208" y="224" w="5" h="5" />
         <part id="outline_full_pixel" x="214" y="224" w="5" h="5" />
         <part id="dynamics" x="176" y="144" w="16" h="16" />
+        <part id="tiles" x="144" y="208" w="6" h="6" />
+        <part id="tiles_manual" x="150" y="208" w="6" h="6" />
+        <part id="tiles_auto" x="156" y="208" w="6" h="6" />
+        <part id="tiles_stack" x="162" y="208" w="6" h="6" />
+        <part id="cursor_skew_n" x="272" y="192" w="16" h="16" focusx="8" focusy="8" />
+        <part id="cursor_skew_s" x="288" y="192" w="16" h="16" focusx="8" focusy="8" />
+        <part id="cursor_skew_sw" x="272" y="208" w="16" h="16" focusx="8" focusy="8" />
+        <part id="cursor_skew_se" x="288" y="208" w="16" h="16" focusx="8" focusy="8" />
+        <part id="cursor_skew_w" x="272" y="176" w="16" h="16" focusx="8" focusy="8" />
+        <part id="cursor_skew_e" x="288" y="176" w="16" h="16" focusx="8" focusy="8" />
+        <part id="cursor_skew_nw" x="272" y="160" w="16" h="16" focusx="8" focusy="8" />
+        <part id="cursor_skew_ne" x="288" y="160" w="16" h="16" focusx="8" focusy="8" />
     </parts>
     <styles>
         <style id="box" />
@@ -932,6 +944,11 @@
             <background-border part="timeline_none" state="focus" />
             <background-border part="timeline_none" state="focus mouse" />
             <background-border part="timeline_none" state="selected" />
+        </style>
+        <style id="timeline_tilemap_layer">
+            <icon part="tiles" color="timeline_normal_text" align="left middle" x="4" />
+            <icon part="tiles" color="timeline_active_text" align="left middle" x="4" state="focus" />
+            <icon part="tiles" color="timeline_clicked_text" align="left middle" x="4" state="selected" />
         </style>
         <style id="timeline_header_frame" extends="timeline_box" font="mini">
             <text color="timeline_normal_text" />

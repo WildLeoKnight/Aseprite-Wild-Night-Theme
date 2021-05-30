@@ -11,6 +11,11 @@ Green Version
 
 # Changelog
 ```
+2.1
+> Added compatibility to aseprite's latest version
+```
+
+```
 2.0
 > Complete theme overhaul
 > Created a Green variant - Toxic Green
