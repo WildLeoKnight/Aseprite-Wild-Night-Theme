@@ -2,11 +2,11 @@
  A smooth dark theme for Aseprite
 
 Purple Version
-![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNight2'0ExamplePurple.png)
+![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNight2'2ExamplePurple.png)
 Orange Version
-![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNight2'0ExampleOrange.png)
+![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNight2'2ExampleOrange.png)
 Green Version
-![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNight2'0ExampleGreen.png)
+![screenshot](https://github.com/LeonardoLourenco/Aseprite-Wild-Night-Theme/raw/master/WildNight2'2ExampleGreen.png)
 
 
 # Changelog
