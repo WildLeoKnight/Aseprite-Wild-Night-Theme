@@ -11,6 +11,11 @@ Green Version
 
 # Changelog
 ```
+2.2
+> Increased layer/frame scrollbar visibility
+```
+
+```
 2.1
 > Added compatibility to aseprite's latest version
 ```
