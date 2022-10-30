@@ -1,7 +1,7 @@
 {
-  "name": "wild-night-theme-green-big-text",
-  "displayName": "Wild Night Green BT",
-  "description": "A smooth dark theme for Aseprite - Green flavour",
+  "name": "wild-night-theme-red-big-text",
+  "displayName": "Wild Night Red BT",
+  "description": "A smooth dark theme for Aseprite - Red flavour",
   "version": "2.3",
   "author": { "name": "WildLeoKnight", "email": "wildleoknight@gmail.com", "url": "https://wildleoknight.itch.io/aseprite-wild-night-theme" },
   "contributors": [
@@ -13,7 +13,7 @@
   ],
   "contributes": {
     "themes": [
-      { "id": "Wild Night Green BT", "path": "." }
+      { "id": "Wild Night Red BT", "path": "." }
     ]
   }
 }
