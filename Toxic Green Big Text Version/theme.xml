@@ -1,4 +1,4 @@
-<?xml version="2.3" encoding="utf-8" ?>
+<?xml version="2.4" encoding="utf-8" ?>
 <theme name="Wild Night Green BT" screenscaling="1" uiscaling="2">
     <authors>
         <author name="WildLeoKnight" url="https://wildleoknight.com/" />
@@ -275,6 +275,8 @@
         <part id="combobox_arrow_right" x="99" y="196" w="9" h="9" />
         <part id="combobox_arrow_right_selected" x="115" y="196" w="9" h="9" />
         <part id="combobox_arrow_right_disabled" x="131" y="196" w="9" h="9" />
+        <part id="arrow_circle_cw" x="99" y="243" w="10" h="10" />
+        <part id="arrow_circle_cw_selected" x="115" y="243" w="10" h="10" />
         <part id="newfolder" x="99" y="211" w="9" h="9" />
         <part id="newfolder_selected" x="115" y="211" w="9" h="9" />
         <part id="list_view" x="96" y="224" w="9" h="9" />
@@ -289,6 +291,7 @@
         <part id="buttonset_item_hot_focused" x="128" y="0" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
         <part id="buttonset_item_focused" x="128" y="16" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
         <part id="buttonset_item_pushed" x="112" y="16" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
+        <part id="buttonset_item_active" x="112" y="32" w1="3" w2="10" w3="3" h1="3" h2="8" h3="5" />
         <part id="tab_normal" x="2" y="112" w1="4" w2="5" w3="5" h1="4" h2="6" h3="2" />
         <part id="tab_active" x="16" y="112" w1="4" w2="7" w3="5" h1="4" h2="6" h3="2" />
         <part id="tab_bottom_active" x="16" y="124" w1="4" w2="7" w3="5" h1="2" h2="1" h3="2" />
@@ -332,6 +335,12 @@
         <part id="pal_presets" x="160" y="200" w="5" h="5" />
         <part id="pal_options" x="168" y="200" w="5" h="5" />
         <part id="pal_resize" x="176" y="200" w="5" h="5" />
+        <part id="debug_continue" x="208" y="240" w="7" h="7" />
+        <part id="debug_pause" x="208" y="247" w="7" h="7" />
+        <part id="debug_step_into" x="222" y="240" w="7" h="7" />
+        <part id="debug_step_over" x="215" y="240" w="7" h="7" />
+        <part id="debug_step_out" x="229" y="240" w="7" h="7" />
+        <part id="debug_breakpoint" x="236" y="240" w="7" h="7" />
         <part id="selection_replace" x="176" y="160" w="7" h="7" />
         <part id="selection_add" x="184" y="160" w="7" h="7" />
         <part id="selection_subtract" x="192" y="160" w="7" h="7" />
@@ -396,6 +405,7 @@
         <part id="timeline_drop_frame_deco" x="252" y="120" w1="2" w2="1" w3="2" h1="3" h2="1" h3="3" />
         <part id="timeline_loop_range" x="240" y="132" w1="4" w2="4" w3="4" h1="3" h2="6" h3="3" />
         <part id="timeline_focused" x="228" y="12" w1="2" w2="8" w3="2" h1="2" h2="8" h3="2" />
+        <part id="timeline_zindex" x="272" y="122" w="6" h="6" />
         <part id="flag_normal" x="0" y="240" w="16" h="10" />
         <part id="flag_highlight" x="16" y="240" w="16" h="10" />
         <part id="drop_pixels_ok" x="176" y="176" w="7" h="8" />
@@ -457,6 +467,8 @@
         <part id="icon_save" x="232" y="264" w="8" h="8" />
         <part id="icon_save_small" x="240" y="264" w="8" h="8" />
         <part id="icon_slice" x="248" y="264" w="8" h="8" />
+        <part id="icon_aspect_ratio" x="256" y="264" w="10" h="8" />
+        <part id="icon_delta" x="266" y="264" w="6" h="8" />
         <part id="tool_rectangular_marquee" x="144" y="0" w="16" h="16" />
         <part id="tool_elliptical_marquee" x="160" y="0" w="16" h="16" />
         <part id="tool_lasso" x="176" y="0" w="16" h="16" />
@@ -514,6 +526,10 @@
         <part id="cursor_skew_e" x="288" y="176" w="16" h="16" focusx="8" focusy="8" />
         <part id="cursor_skew_nw" x="272" y="160" w="16" h="16" focusx="8" focusy="8" />
         <part id="cursor_skew_ne" x="288" y="160" w="16" h="16" focusx="8" focusy="8" />
+        <part id="one_win_icon" x="96" y="256" w="8" h="7" />
+        <part id="multi_win_icon" x="104" y="256" w="8" h="7" />
+        <part id="spin_up" x="128" y="256" w="5" h="3" />
+        <part id="spin_down" x="128" y="259" w="5" h="3" />
     </parts>
     <styles>
         <style id="box" />
@@ -588,6 +604,14 @@
         <style id="tooltip_text">
             <background color="tooltip_face" />
             <text color="tooltip_text" align="left" />
+        </style>
+        <style id="textbox_text" align="left top wordwrap" border="4">
+            <background color="textbox_face" />
+            <text color="textbox_text" align="left" />
+        </style>
+        <style id="textbox_label" extends="textbox_text">
+            <background color="window_face" />
+            <text color="text" align="left" />
         </style>
         <style id="label" padding="1">
             <text color="text" align="left" />
@@ -679,7 +703,7 @@
             <icon part="radio_selected" align="left middle" x="2" state="selected" />
             <icon part="radio_disabled" align="left middle" x="2" state="disabled" />
         </style>
-        <style id="mini_button">
+        <style id="mini_button" padding-top="1" border="3" border-bottom="5">
             <background-border part="buttonset_item_normal" />
             <background-border part="buttonset_item_hot" state="mouse" />
             <background-border part="buttonset_item_hot" state="focus" />
@@ -689,7 +713,11 @@
             <text color="button_selected_text" state="selected" />
         </style>
         <style id="mini_check_box" extends="check_box" font="mini" />
-        <style id="combobox_button" extends="mini_button">
+        <style id="combobox">
+            <background-border part="sunken2_focused" state="focus" />
+            <background-border part="sunken2_normal" />
+        </style>
+        <style id="combobox_button" extends="mini_button" padding="0">
             <icon part="combobox_arrow_down" />
             <icon part="combobox_arrow_down_selected" state="selected" />
             <icon part="combobox_arrow_down_disabled" state="disabled" />
@@ -709,22 +737,26 @@
             <icon part="combobox_arrow_down_selected" state="selected" />
             <icon part="combobox_arrow_down_disabled" state="disabled" />
         </style>
-        <style id="go_back_button" extends="mini_button">
+        <style id="go_back_button" extends="mini_button" padding-top="2">
             <icon part="combobox_arrow_left" />
             <icon part="combobox_arrow_left_selected" state="selected" />
             <icon part="combobox_arrow_left_disabled" state="disabled" />
         </style>
-        <style id="go_forward_button" extends="mini_button">
+        <style id="go_forward_button" extends="mini_button" padding-top="2">
             <icon part="combobox_arrow_right" />
             <icon part="combobox_arrow_right_selected" state="selected" />
             <icon part="combobox_arrow_right_disabled" state="disabled" />
         </style>
-        <style id="go_up_button" extends="mini_button">
+        <style id="go_up_button" extends="mini_button" padding-top="2">
             <icon part="combobox_arrow_up" />
             <icon part="combobox_arrow_up_selected" state="selected" />
             <icon part="combobox_arrow_up_disabled" state="disabled" />
         </style>
-        <style id="new_folder_button" extends="mini_button">
+        <style id="refresh_button" extends="mini_button">
+            <icon part="arrow_circle_cw" />
+            <icon part="arrow_circle_cw_selected" state="selected" />
+        </style>
+        <style id="new_folder_button" extends="mini_button" padding-top="2">
             <icon part="newfolder" />
             <icon part="newfolder_selected" state="selected" />
         </style>
@@ -735,7 +767,7 @@
             <icon part="pal_options" />
         </style>
         <style id="new_frame_button" extends="mini_button" />
-        <style id="color_button" extends="mini_button" border="5" font="mini" />
+        <style id="color_button" extends="mini_button" font="mini" padding-bottom="1" />
         <style id="splitter">
             <background color="face" />
         </style>
@@ -825,6 +857,9 @@
         </style>
         <style id="workspace_tabs">
             <background color="workspace" />
+        </style>
+        <style id="workspace_check_box" extends="check_box" padding="4">
+            <text color="workspace_text" align="left middle" x="14" />
         </style>
         <style id="tab">
             <background part="tab_normal" align="middle" />
@@ -994,6 +1029,9 @@
         <style id="timeline_both_links">
             <background part="timeline_both_links_active" />
         </style>
+        <style id="timeline_zindex">
+            <icon part="timeline_zindex" align="right bottom" x="0" y="-1" />
+        </style>
         <style id="timeline_gear" extends="timeline_box">
             <icon part="timeline_gear" />
             <icon part="timeline_gear_active" state="focus" />
@@ -1061,6 +1099,14 @@
             <text color="listitem_selected_text" align="left middle" x="1" state="selected" />
             <text color="disabled" align="left middle" x="1" state="disabled" />
         </style>
+        <style id="undo_saved_item" extends="list_item">
+            <text color="listitem_normal_text" align="left middle" x="11" />
+            <text color="listitem_selected_text" align="left middle" x="11" state="selected" />
+            <text color="disabled" align="left middle" x="11" state="disabled" />
+            <icon part="icon_save" color="listitem_normal_text" align="left middle" x="1" />
+            <icon part="icon_save" color="listitem_selected_text" align="left middle" x="1" state="selected" />
+            <icon part="icon_save" color="disabled" align="left middle" x="1" state="disabled" />
+        </style>
         <style id="aseprite_face">
             <icon part="aseprite_face" />
             <icon part="aseprite_face_mouse" state="mouse" />
@@ -1077,5 +1123,104 @@
             <text color="slider_empty_text" align="center middle" />
             <text color="slider_empty_text" align="center middle" state="focus" />
         </style>
+        <style id="buttonset" gap-rows="-3" gap-columns="-1" />
+        <style id="buttonset_item" font="mini" border="3" border-bottom="5">
+            <background-border part="buttonset_item_normal" />
+            <background-border part="buttonset_item_hot" state="selected" />
+            <background-border part="buttonset_item_hot" state="mouse" />
+            <background-border part="buttonset_item_hot_focused" state="selected focus" />
+            <background-border part="buttonset_item_hot_focused" state="mouse focus" />
+            <background-border part="buttonset_item_pushed" state="capture selected" />
+            <background-border part="buttonset_item_pushed" state="mouse capture" />
+            <background-border part="buttonset_item_focused" state="focus" />
+        </style>
+        <style id="buttonset_item_icon" extends="buttonset_item">
+            <icon />
+            <icon state="disabled" color="disabled" />
+            <icon state="capture selected" color="button_selected_text" />
+        </style>
+        <style id="buttonset_item_icon_mono" extends="buttonset_item_icon">
+            <icon color="button_normal_text" />
+        </style>
+        <style id="buttonset_item_text" extends="buttonset_item" padding="1">
+            <text color="button_normal_text" />
+            <text color="button_hot_text" state="selected" />
+            <text color="button_hot_text" state="mouse" />
+            <text color="button_selected_text" state="mouse capture" />
+            <text color="button_selected_text" state="capture selected" />
+            <text color="background" x="1" y="1" state="disabled" />
+            <newlayer />
+            <text color="disabled" state="disabled" align="top" />
+        </style>
+        <style id="buttonset_item_text_top" extends="buttonset_item">
+            <text color="button_normal_text" align="top" />
+            <text color="button_hot_text" state="selected" align="top" />
+            <text color="button_hot_text" state="mouse" align="top" />
+            <text color="button_selected_text" state="mouse capture" align="top" />
+            <text color="button_selected_text" state="capture selected" align="top" />
+            <text color="background" x="1" y="1" state="disabled" align="top" />
+            <newlayer />
+            <text color="disabled" state="disabled" align="top" />
+        </style>
+        <style id="buttonset_item_text_top_icon_bottom" extends="buttonset_item_text_top" padding-top="2" padding-bottom="1">
+            <icon align="bottom" />
+            <icon align="bottom" state="disabled" color="disabled" />
+            <icon align="bottom" state="capture selected" color="button_selected_text" />
+        </style>
+        <style id="new_sprite_rgb" extends="buttonset_item_text_top_icon_bottom" />
+        <style id="new_sprite_grayscale" extends="buttonset_item_text_top_icon_bottom" />
+        <style id="new_sprite_indexed" extends="buttonset_item_text_top_icon_bottom" />
+        <style id="bg_transparent" extends="buttonset_item_text_top_icon_bottom" />
+        <style id="bg_white" extends="buttonset_item_text_top_icon_bottom" />
+        <style id="bg_black" extends="buttonset_item_text_top_icon_bottom" />
+        <style id="dir_item" extends="buttonset_item_icon" width="18" height="20" />
+        <style id="context_bar_button" extends="buttonset_item_icon" width="15" />
+        <style id="context_bar_text_button" extends="buttonset_item_text" width="15" />
+        <style id="brush_type" extends="context_bar_button" />
+        <style id="brush_type_mono" extends="context_bar_button">
+            <icon color="button_normal_text" />
+        </style>
+        <style id="ink_type" extends="context_bar_button" padding-left="1" />
+        <style id="dynamics_field" extends="context_bar_button" padding-left="1" />
+        <style id="pivot_field" extends="context_bar_button" padding-top="1" />
+        <style id="pivot_dir" extends="buttonset_item_icon" width="17" height="19" />
+        <style id="selection_mode" extends="context_bar_button" padding-top="1" />
+        <style id="symmetry_field" extends="context_bar_button" padding-top="1" />
+        <style id="symmetry_options" extends="context_bar_text_button" padding-left="3" padding-bottom="3" />
+        <style id="pal_edit_lock" extends="buttonset_item_icon" width="15">
+            <icon part="timeline_closed_padlock_normal" />
+            <icon part="timeline_closed_padlock_normal" state="capture selected" />
+        </style>
+        <style id="pal_edit_unlock" extends="pal_edit_lock">
+            <background-border part="buttonset_item_active" />
+            <background-border part="buttonset_item_active" state="selected" />
+            <background-border part="buttonset_item_active" state="focus" />
+            <background-border part="buttonset_item_active" state="mouse" />
+            <background-border part="buttonset_item_active" state="mouse focus" />
+            <background-border part="buttonset_item_active" state="capture" />
+            <background-border part="buttonset_item_active" state="capture selected" />
+            <newlayer />
+            <icon part="timeline_open_padlock_active" />
+        </style>
+        <style id="pal_button" extends="buttonset_item_icon" minwidth="15" padding-top="1" />
+        <style id="debugger_button" extends="buttonset_item_icon" width="17" height="19" />
+        <style id="edit_pixels_mode" extends="buttonset_item_icon" width="15">
+            <icon color="button_normal_text" />
+        </style>
+        <style id="edit_tiles_mode" extends="edit_pixels_mode" width="15">
+            <background-border part="buttonset_item_active" />
+            <background-border part="buttonset_item_active" state="selected" />
+            <background-border part="buttonset_item_active" state="focus" />
+            <background-border part="buttonset_item_active" state="mouse" />
+            <background-border part="buttonset_item_active" state="mouse focus" />
+            <background-border part="buttonset_item_active" state="capture" />
+            <background-border part="buttonset_item_active" state="capture selected" />
+            <newlayer />
+            <icon color="button_selected_text" />
+        </style>
+        <style id="standard_brush" extends="buttonset_item_icon_mono" width="17" height="19" />
+        <style id="outline_cell" extends="buttonset_item_icon" width="17" height="19" />
+        <style id="ani_button" extends="buttonset_item_icon" width="17" />
+        <style id="multi_window_item" extends="buttonset_item_icon" width="17" height="17" />
     </styles>
 </theme>
