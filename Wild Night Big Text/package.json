@@ -1,0 +1,24 @@
+{
+  "name": "wild-night-theme-big-text",
+  "displayName": "Wild Night Big Text",
+  "description": "A smooth dark theme for Aseprite",
+  "version": "3.0",
+  "author": { "name": "WildLeoKnight", "email": "wildleoknight@gmail.com", "url": "https://wildleoknight.com" },
+  "contributors": [
+  ],
+  "publisher": "WildLeoKnight",
+  "license": "CC-BY-4.0",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      { "id": "Wild Night Big Text", "path": "./", "variant": "Purple" },
+      { "id": "Wild Night Big Text Orange", "path": "./orange", "variant": "Orange" },
+      { "id": "Wild Night Big Text Green", "path": "./green", "variant": "Green" },
+      { "id": "Wild Night Big Text Red", "path": "./red", "variant": "Red" },
+      { "id": "Wild Night Big Text Blue", "path": "./blue", "variant": "Blue" },
+      { "id": "Wild Night Big Text Yellow", "path": "./yellow", "variant": "Yellow" }
+    ]
+  }
+}

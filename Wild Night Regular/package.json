@@ -1,0 +1,24 @@
+{
+  "name": "wild-night-theme-regular",
+  "displayName": "Wild Night Regular",
+  "description": "A smooth dark theme for Aseprite",
+  "version": "3.0",
+  "author": { "name": "WildLeoKnight", "email": "wildleoknight@gmail.com", "url": "https://wildleoknight.com" },
+  "contributors": [
+  ],
+  "publisher": "WildLeoKnight",
+  "license": "CC-BY-4.0",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      { "id": "Wild Night Regular", "path": "./", "variant": "Purple" },
+      { "id": "Wild Night Regular Orange", "path": "./orange", "variant": "Orange" },
+      { "id": "Wild Night Regular Green", "path": "./green", "variant": "Green" },
+      { "id": "Wild Night Regular Red", "path": "./red", "variant": "Red" },
+      { "id": "Wild Night Regular Blue", "path": "./blue", "variant": "Blue" },
+      { "id": "Wild Night Regular Yellow", "path": "./yellow", "variant": "Yellow" }
+    ]
+  }
+}
