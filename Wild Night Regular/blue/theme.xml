@@ -1,5 +1,5 @@
 <?xml version="2.5" encoding="utf-8" ?>
-<theme name="Wild Night Regular Blue" screenscaling="1" uiscaling="1">
+<theme name="Wild Night Regular Blue" screenscaling="2" uiscaling="1">
     <authors>
         <author name="WildLeoKnight" url="https://wildleoknight.com/"/>
     </authors>
@@ -419,6 +419,8 @@
         <part id="flag_highlight" x="16" y="240" w="16" h="10"/>
         <part id="drop_pixels_ok" x="176" y="176" w="7" h="8"/>
         <part id="drop_pixels_ok_selected" x="176" y="184" w="7" h="8"/>
+        <part id="drop_pixels_drop" x="184" y="176" w="7" h="8"/>
+        <part id="drop_pixels_drop_selected" x="184" y="184" w="7" h="8"/>
         <part id="drop_pixels_cancel" x="192" y="176" w="7" h="8"/>
         <part id="drop_pixels_cancel_selected" x="192" y="184" w="7" h="8"/>
         <part id="warning_box" x="112" y="80" w="9" h="10"/>
@@ -462,6 +464,7 @@
         <part id="icon_close" x="152" y="256" w="7" h="7"/>
         <part id="icon_search" x="160" y="256" w="8" h="8"/>
         <part id="icon_user_data" x="168" y="256" w="8" h="8"/>
+        <part id="icon_layout" x="176" y="256" w="5" h="6"/>
         <part id="icon_pos" x="144" y="264" w="8" h="8"/>
         <part id="icon_size" x="152" y="264" w="8" h="8"/>
         <part id="icon_selsize" x="160" y="264" w="8" h="8"/>
@@ -478,6 +481,7 @@
         <part id="icon_slice" x="248" y="264" w="8" h="8"/>
         <part id="icon_aspect_ratio" x="256" y="264" w="10" h="8"/>
         <part id="icon_delta" x="266" y="264" w="6" h="8"/>
+        <part id="icon_corner_radius" x="272" y="264" w="8" h="8"/>
         <part id="icon_add" x="184" y="200" w="5" h="5"/>
         <part id="tool_rectangular_marquee" x="144" y="0" w="16" h="16"/>
         <part id="tool_elliptical_marquee" x="160" y="0" w="16" h="16"/>
@@ -544,6 +548,7 @@
         <part id="spin_down" x="128" y="259" w="5" h="3"/>
         <part id="right_diagonal_symmetry" x="176" y="240" w="13" h="13"/>
         <part id="left_diagonal_symmetry" x="192" y="240" w="13" h="13"/>
+        <part id="corner_radius_field" x="288" y="128" w="16" h="16"/>
     </parts>
     <styles>
         <style id="box"/>
@@ -618,9 +623,9 @@
         <style id="tooltip_window_arrow">
             <background part="tooltip_arrow"/>
         </style>
-        <style id="tooltip_face">
+        <!-- <style id="tooltip_face">
             <background color="tooltip_face"/>
-        </style>
+        </style> -->
         <style id="tooltip_text">
             <background color="tooltip_face"/>
             <text color="tooltip_text" align="left"/>
@@ -638,6 +643,9 @@
             <text color="disabled" align="left" state="disabled"/>
         </style>
         <style id="mini_label" extends="label" font="mini"/>
+        <style id="warning_label" extends="label">
+            <icon part="warning_box" align="right"/>
+        </style>
         <style id="list_header_label" padding="2">
             <text color="text" align="left" x="2"/>
         </style>
@@ -661,6 +669,9 @@
             <text color="button_normal_text" align="left"/>
             <text color="button_hot_text" align="left" state="mouse"/>
             <text color="button_selected_text" align="left" state="selected"/>
+        </style>
+        <style id="view_base">
+            <background color="window_face"/>
         </style>
         <style id="view" border="3" border-top="4">
             <background color="window_face"/>
@@ -699,6 +710,7 @@
             <text color="disabled" state="disabled"/>
         </style>
         <style id="check_box" border="2">
+            <!-- <background color="face" state="disabled"/> test later -->
             <background color="check_hot_face" state="mouse focus"/>
             <background color="check_focus_face" state="focus"/>
             <background color="check_hot_face" state="mouse"/>
@@ -798,6 +810,7 @@
             <background color="window_face"/>
             <background-border part="separator_horz" align="middle"/>
             <text color="separator_label" x="4" align="left middle"/>
+            <!-- <text color="disabled" x="4" align="left middle" state="disabled"/> test later -->
         </style>
         <style id="menu_separator" extends="horizontal_separator"/>
         <style id="separator_in_view" extends="horizontal_separator">
@@ -1142,6 +1155,12 @@
             <text color="slider_empty_text" align="center middle"/>
             <text color="slider_empty_text" align="center middle" state="focus" y="1"/>
         </style>
+        <style id="textedit" border="2">
+            <background color="textbox_face"/>
+            <background color="selected" align="left" state="selected"/>
+            <text color="textbox_text" align="left"/>
+            <text color="selected_text" align="left" state="selected"/>
+        </style>
         <style id="mini_slider" extends="slider" font="mini">
             <background part="mini_slider_empty"/>
             <text color="slider_empty_text" align="center middle"/>
@@ -1211,6 +1230,7 @@
         <style id="selection_mode" extends="context_bar_button" padding-top="1"/>
         <style id="symmetry_field" extends="context_bar_button" padding-top="1"/>
         <style id="symmetry_options" extends="context_bar_text_button" padding-left="3" padding-bottom="3"/>
+        <style id="corner_radius_field" extends="context_bar_button" padding-left="1"/>
         <style id="pal_edit_lock" extends="buttonset_item_icon" width="15">
             <icon part="timeline_closed_padlock_normal"/>
             <icon part="timeline_closed_padlock_normal" state="capture selected"/>
@@ -1246,5 +1266,18 @@
         <style id="outline_cell" extends="buttonset_item_icon" width="17" height="19"/>
         <style id="ani_button" extends="buttonset_item_icon" width="17"/>
         <style id="multi_window_item" extends="buttonset_item_icon" width="17" height="17"/>
+        <style id="runner_command_item" height="15" border="3">
+            <background color="menuitem_hot_face" state="selected"/>
+            <text color="text" x="3" align="left"/>
+            <text color="disabled" x="3" align="left" state="disabled"/>
+            <text color="menuitem_hot_text" x="3" align="left" state="selected"/>
+        </style>
+        <style id="runner_extension_tag" font="mini">
+            <background color="menuitem_highlight_face"/>
+            <text color="menuitem_highlight_text" align="center"/>
+        </style>
+        <style id="runner_command_checked" width="8" height="8">
+            <icon part="check_selected" align="center middle"/>
+        </style>
     </styles>
 </theme>
