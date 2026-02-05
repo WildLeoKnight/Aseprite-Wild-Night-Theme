@@ -29,6 +29,12 @@ Big Text Yellow Version
 
 # Changelog
 ```
+3.1
+> Added compatibility to aseprite's latest version (v1.3.16 & v1.3.17-beta1)
+> Corrected an error on the Big Text variant where it wouldn't use Pixellari by default
+```
+
+```
 3.0
 > Restylized some sprites, namely the cursor
 > Restructured the theme so it can use the Mode selector on the "Edit -> Preferences -> General" menu. You don't need to install several versions to access the different colors anymore. The theme is now bundled with all the color options and you can now switch them easily. The installation files are now separated into Regular (with aseprite's default fonts) and Big Text (using Pixellari). I recommend Big Text for 1080p screen users and Regular for 1440p screen users.
