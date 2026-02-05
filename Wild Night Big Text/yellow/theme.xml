@@ -6,8 +6,8 @@
     <fonts>
         <!-- <font id="default" font="Aseprite"/>
         <font id="mini" font="Aseprite Mini"/> -->
-        <font id="default" name="Pixellari" type="truetype" file="Pixellari.ttf" size="8" />
-        <font id="mini" name="Pixellari" type="truetype" file="Pixellari.ttf" size="8" />
+        <font id="default" name="Pixellari" type="truetype" file="../Pixellari.ttf" size="8" />
+        <font id="mini" name="Pixellari" type="truetype" file="../Pixellari.ttf" size="8" />
     </fonts>
     <dimensions>
         <dim id="scrollbar_size" value="12"/>
